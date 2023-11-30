@@ -105,4 +105,4 @@ jobs:
           additional-vars: |
             { "customer": "${{env.GITHUB_REF_NAME_SLUG}}" }
       - name: display URL
-        run: echo "${{env.GITHUB_REF_NAME_SLUG}}.octi.dev.filigran.io"
+        run: echo "https://${{env.GITHUB_REF_NAME_SLUG}}.octi.dev.filigran.io"
