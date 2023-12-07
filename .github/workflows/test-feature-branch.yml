@@ -111,6 +111,6 @@ jobs:
           ansible-tower-url: ${{ secrets.AWX_URL }}
           template-id: "26"
           additional-vars: |
-            { "customer": "${{env.steps.meta.outputs.version}}" }
+            { "customer": "${{steps.meta.outputs.version}}" }
       - name: display URL
-        run: echo "https://${{env.steps.meta.outputs.version}}.octi.dev.filigran.io"
+        run: echo "https://${{steps.meta.outputs.version}}.octi.dev.filigran.io"
